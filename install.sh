@@ -28,7 +28,6 @@ echo "  ███    ███     ███    ███ ███    ███
 echo "  ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀          ▄████▀    ▀██████▀   ▀██████▀  █████▄▄██ ";
 echo "                                         ▀                                                                            ▀         ";
 
-echo -e "${BLUE}                                    https://github.com/Z4nzu/hackingtool ${NC}"
 echo -e "${RED}                                     [!] This Tool Must Run As ROOT [!]${NC}\n"
 echo -e ${CYAN}                "Select Best Option : \n"
 echo -e "${WHITE}              [1] Kali Linux / Parrot-Os (apt)"
@@ -63,7 +62,7 @@ if [ $choice == 1 ] || [ $choice == 2 ]; then
 	    fi
 
         echo "[✔] Installing ...\n";
-        sudo git clone https://github.com/Z4nzu/hackingtool.git "$INSTALL_DIR";
+        sudo git clone https://github.com/TataneSan/hackingtool.git "$INSTALL_DIR";
         echo "#!/bin/bash
         python3 $INSTALL_DIR/hackingtool.py" '${1+"$@"}' > hackingtool;
         sudo chmod +x hackingtool;
